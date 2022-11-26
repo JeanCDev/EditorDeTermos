@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <table border="1" id="terms">
+    <tr id="terms-header">
+      <th>Código</th>
+    </tr>
+
+  </table>
+  <textarea name="" id="textbox" cols="30" rows="10"></textarea>
+  <button id="create">Salvar</button>
+
+  <script src="./FileManipulatorController.js"></script>
+  <script src="./HtmlManipulatorController.js"></script>
+  <script src="./TermController.js"></script>
+  <script>
+    new TermController([
+      {language: "PT-BR", file: "./pt-br.json"},
+      {language: "PT-PT", file: "./pt-pt.json"},
+      {language: "EN-US",  file: "./en-us.json"}
+    ]);
+  </script>
+</body>
+</html>
